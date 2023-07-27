@@ -1,14 +1,14 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
 
 :root {
-  --primary-color: #c20000;
-  --primary-color-dark: #3c1111;
+  --primary-color: #D00000;
+  --primary-color-dark: #858686;
   --secondary-color: #fafcff;
-  --text-dark: #3f0d15;
-  --text-darker: #e27500;
-  --text-light: #767268;
+  --text-dark: #2E2E2E;
+  --text-darker: #2E2E2E;
+  --text-light: #2E2E2E;
   --extra-light: #ffffff;
-  --extra-lighter: #e27500;
+  --extra-lighter: #2E2E2E;
   --max-width: 1200px;
 }
 
@@ -45,6 +45,7 @@
   font-size: 1rem;
   color: var(--text-dark);
   max-width: calc(var(--max-width) / 2);
+  text-align: justify;
 }
 
 .btn {
@@ -60,7 +61,7 @@
 }
 
 .btn:hover {
-  background-color: var(--primary-color-dark);
+  background-color: var(--extra-lighter);
 }
 
 a {
@@ -73,11 +74,12 @@ img {
 }
 
 body {
-  font-family: "Poppins", sans-serif;
+font-family: 'Open Sans', sans-serif;
 }
 
 nav {
   padding: 1rem;
+  padding-top: 0px;
   position: absolute;
   top: 0;
   left: 50%;
@@ -90,8 +92,10 @@ nav {
 }
 
 .nav__logo {
-  height: 80px;
-  width: 60px;
+  justify-content:start;
+  margin: 0px 0px;
+  /* height: 100px; */
+  width: 250px;
   cursor: pointer;
 }
 
@@ -137,12 +141,11 @@ header {
   left: 50%;
   border: 0.5rem solid var(--extra-lighter);
   border-radius: 1rem;
-  box-shadow: 5px 5px 30px rgba(50, 0, 0, 0.1);
+  box-shadow: 5px 5px 30px #2E2E2E;
 }
 
 .header__image img:nth-child(1) {
   max-width: 350px;
-  /* height: 400px; */
   transform: translate(-75%, -50%);
 }
 
@@ -206,7 +209,7 @@ header {
   width: 60px;
   height: 60px;
   border-radius: 100%;
-  box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.1);
+  box-shadow: 5px 5px 30px #2E2E2E;
 }
 
 .video__image span {
@@ -415,11 +418,23 @@ header {
   gap: 2rem;
 }
 
-.subscribe__form {
+
+.subscribe__forms {
   display: flex;
+  margin-top: 1rem;
   align-items: center;
   justify-content: center;
 }
+
+.subscribe__form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1rem;
+  align-items: center;
+  justify-content: center;
+}
+
+
 
 .subscribe__form form {
   width: 100%;
@@ -439,8 +454,16 @@ header {
   font-size: 1rem;
 }
 
+.subscribe__form span {
+  width: 100%;
+  padding: 1rem;
+  text-align: center;
+  color: #D00000;
+  font-size: 1rem;
+}
+
 .footer {
-  background-color: var(--text-dark);
+  background-color: var(--primary-color-dark);
 }
 
 .footer__container {
@@ -448,6 +471,12 @@ header {
   grid-template-columns: repeat(3, 1fr);
   gap: 5rem;
   color: var(--secondary-color);
+}
+.nav__logos{
+height: 60px;
+  width: 60px;
+  margin-bottom: 3px;
+  cursor: pointer;
 }
 
 .footer__col h3 {
@@ -495,7 +524,12 @@ header {
   border-top: 1px solid var(--text-light);
 }
 
-@media (width < 800px) {
+.footer__bar a{
+  text-decoration-line: underline;
+  color: inherit;
+}
+
+@media (width < 900px) {
   .header__image img:nth-child(1) {
     max-width: 180px;
   }
