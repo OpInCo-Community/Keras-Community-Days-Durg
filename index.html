@@ -14,20 +14,20 @@
   <body>
     <!-- Navbar -->
     <nav>
-      <div class="nav__logo"><img src="asset/Keras.png" alt="logo"/></div>
+      <img  class="nav__logo" src="asset/KCDD Banner.png" alt="logo"/>
       <ul class="nav__links">
-        <li class="link"><a href="#">Home</a></li>
-        <li class="link"><a href="#">About</a></li>
-        <li class="link"><a href="#">Explore</a></li>
+        <li class="link"><a href="#home">Home</a></li>
+        <li class="link"><a href="#abt">About</a></li>
+        <li class="link"><a href="#exp">Explore</a></li>
         <li class="link"><a href="#foot">Contact Us</a></li>
       </ul>
-      <a href="#foot"><button class="btn">Join on Discord</button></a>
+      <a href="https://discord.gg/eBthstCspw" target="_blank"><button class="btn">Join on Discord</button></a>
     </nav>
     <header>
-      <div class="section__container header__container">
+      <div class="section__container header__container" id="home">
         <div class="header__image">
           <img src="asset/K1.png" alt="header" />
-          <img src="asset/K.png" alt="header" />
+          <img src="asset/K.jpg" alt="header" />
         </div>
         <div class="header__content">
           <div>
@@ -52,14 +52,17 @@
     </header>
 
     <section class="section__container Speaker__container">
-      <div class="section__header">
+      <div class="section__header" id="abt">
         <div>
           <h2 class="section__title">Speakers & Talks</h2>
-          <p class="section__subtitle">
+          <!-- <p class="section__subtitle">
           There are many brilliant speakers who wil join us at this event to share their experience and knowledge over Keras.         
-          </p>
+          </p> -->
+          <br/>
+          <br />
+          <p class="section__subtitle">Folks wait for a while... Speakers will be announced very Soon.</p>
         </div>
-        <div class="Speaker__nav">
+        <!-- <div class="Speaker__nav">
           <span><i class="ri-group-2-fill"></i></span>
           <span><i class="ri-user-voice-fill"></i></span>
         </div>
@@ -96,16 +99,15 @@
             <p class="Speaker__subtitle">Going to give a talk on</p>
             <p class="Speaker__subtitle">Available Soon</p>
           </div>
-        </div>
+        </div> -->
       </div>
     </section>
 
     <section class="explore">
-      <div class="section__container explore__container">
+      <div class="section__container explore__container" id="exp">
         <h2 class="section__title">Explore Keras</h2>
         <p class="section__subtitle">
-          Explore keras and the services provided by them. Here you can
-          find everything about keras.
+          Explore keras and the services provided by them. Here you can find everything about keras.
         </p>
         <div class="explore__grid">
           <div class="explore__card">
@@ -113,7 +115,7 @@
             <div class="explore__details">
               <p>Explore Keras</p>
               <div class="Click__box">
-                <a href="https://keras.io/"><button class="explore__now">Click Here</button></a>
+                <a href="https://keras.io/" target="_blank"><button class="explore__now">Click Here</button></a>
               </div>
             </div>
           </div>
@@ -159,30 +161,59 @@
         <div class="gallary__content">
           <div>
             <h2 class="section__title">
-              Our Privious Events
+              Our Previous Events
             </h2>
             <p class="section__subtitle">
-              Explore our previous events which will motivate for joining us on Keras Community Day.
+              Please take a look at our previous events which will motivate you to join us on Keras Community Day.
             </p>
-            <button class="btn">Explore All</button>
+               <a href="https://www.instagram.com/tfugdurg/" target="_blank"> <button class="btn">Explore All</button></a>
+           
           </div>
         </div>
       </div>
     </section>
+    <!-- Code of Conduct -->
 
+      <section class="explore">
+        <div class="section__container explore__container">
+          <h2 class="section__title">Code of Conduct</h2>
+            <p class="section__subtitle">
+              Google is dedicated to providing a harassment-free and inclusive event experience for everyone regardless of gender
+              identity and expression, sexual orientation, disabilities, neurodiversity, physical appearance, body size, ethnicity,
+              nationality, race, age, religion, or other protected category. We do not tolerate harassment of event participants in
+              any form. Google takes violations of our policy seriously and will respond appropriately.
+              <br/> <br />All participants of Google events, including in-person and online attendees, event staff, speakers, and Googlers, must
+              abide by the following policy:
+              <br />
+              <br />
+              <b>Be respectful to each other:</b> Treat everyone with respect. Participate while acknowledging that everyone deserves to be
+              here — and each of us has the right to enjoy our experience without fear of harassment, discrimination, or
+              condescension, whether blatant or via micro-aggressions. All forms of communication should not demean others. Consider
+              what you are saying and how it would feel if it were said to you or about you.......
+            </p>
+            <div class="subscribe__forms">
+              <a target="_blank" href="https://developers.google.com/community-guidelines"><button class="btn" type="submit" >Read
+                More..</button></a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    <!-- Subscribe News Letter -->
     <section class="subscribe">
       <div class="section__container subscribe__container">
         <div class="subscribe__content">
           <h2 class="section__title">Subscribe to get all Updates</h2>
           <p class="section__subtitle">
-            Subscribe with your email id to get updated with our newsletters and different event details.
+            You can subscribe with your email ID to get updated with our newsletters and event details.
           </p>
         </div>
         <div class="subscribe__form">
-          <form>
-            <input type="email" placeholder="Your email here" />
+          <form name="submit-to-google-sheet">
+            <input type="email" name="email" placeholder="Enter your Email here" />
             <button class="btn" type="submit">Send</button>
           </form>
+          <span id="msg"></span>
         </div>
       </div>
     </section>
@@ -190,21 +221,21 @@
     <footer class="footer" id="foot">
       <div class="section__container footer__container">
         <div class="footer__col">
-          <div class="nav__logo"><img src="asset/Keras.png" alt="logo" /></div>
+          <img class="nav__logos" src="asset/Keras.png" alt="logo" />
           <p>
-            Get connectd with community & Explore every aspects of Keras.
+            Get connected with the community and explore every aspect of Keras.
           </p>
         </div>
         <div class="footer__col">
           <h4>Join on Socials</h4>
           
-          <a href="https://twitter.com/TFUGDurg"><p>Join on Facebook</p></a>
-          <a href="https://twitter.com/TFUGDurg"><p>Join on Instagram</p></a>
-          <a href="https://twitter.com/TFUGDurg"><p>Join on Twitter</p></a>
-          <a href="https://twitter.com/TFUGDurg"><p>Join on Linkedin</p></a>
+          <a href="https://www.facebook.com/profile.php?id=100088111825426" target="_blank"><p>Join on Facebook</p></a>
+          <a href="https://www.instagram.com/tfugdurg/" target="_blank"><p>Join on Instagram</p></a>
+          <a href="https://twitter.com/TFUGDurg" target="_blank"><p>Join on Twitter</p></a>
+          <a href="https://twitter.com/TFUGDurg" target="_blank"><p>Join on Linkedin</p></a>
 
         </div>
-        <div class="footer__col">
+<!--         <div class="footer__col">
           <h4>Venue Details</h4>
           <p>
             <span>Address:</span> Annoused Soon
@@ -212,10 +243,28 @@
           <p><span>Email:</span> Annoused Soon</p>
           <p><span>Phone:</span>Annoused Soon</p>
         </div>
-      </div>
+      </div> -->
       <div class="footer__bar">
-        Copyright © 2023 TFUG DURG. All rights reserved by Aarav Shukla.
+        <a href="https://linktr.ee/aaravshukla"  target="_blank"><p>Copyright © 2023 TFUG DURG. All rights reserved by Aarav Shukla.</p></a>
       </div>
     </footer>
+      <script>
+      const scriptURL = 'https://script.google.com/macros/s/AKfycbxJY-PEgIlUyHrH57S7Pkt2WjScUeBlZziz-iuVg5awFgcktdZ9vP248dnifTBeSutHxA/exec'
+      const form = document.forms['submit-to-google-sheet']
+      const msg =  document.getElementById("msg")
+
+      form.addEventListener('submit', e => {
+        e.preventDefault()
+        fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+          .then(response => {
+            msg.innerHTML = "Thanks for Subscribing!"
+            setTimeout(function(){
+              msg.innerHTML = " "
+            },5000)
+            form.reset()
+          })
+          .catch(error => console.error('Error!', error.message))
+      })
+    </script>
   </body>
 </html>
