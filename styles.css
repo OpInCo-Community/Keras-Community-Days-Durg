@@ -61,7 +61,25 @@
   transition: 0.3s;
 }
 
+.btns {
+  padding: 0.75rem 2rem;
+  outline: none;
+  border: none;
+  font-size: 1rem;
+  color: var(--extra-light);
+  background-color: var(--primary-color);
+  border-radius: 4rem;
+  cursor: pointer;
+  transition: 0.3s;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
 .btn:hover {
+  background-color: var(--extra-lighter);
+}
+
+.btns:hover {
   background-color: var(--extra-lighter);
 }
 
