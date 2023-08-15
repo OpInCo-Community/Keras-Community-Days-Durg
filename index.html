@@ -11,6 +11,7 @@
       href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
     <link rel="stylesheet" href="styles.css" />
     <title>Keras Community Day</title>
   </head>
@@ -57,57 +58,8 @@
       </div>
     </header>
 
-    <!--  <section class="section__container Speaker__container">
-      <div class="section__header">
-        <div>
-          <h2 class="section__title">Speakers & Talks</h2>
-          <p class="section__subtitle">
-          There are many brilliant speakers who wil join us at this event to share their experience and knowledge over Keras.         
-          </p>
-          <br/>
-          <br />
-          <p class="section__subtitle">Folks wait for a while... Speakers Woukd be announced very Soon.</p>
-        </div>
-        <div class="Speaker__nav">
-          <span><i class="ri-group-2-fill"></i></span>
-          <span><i class="ri-user-voice-fill"></i></span>
-        </div>
-      </div>
-      <div class="Speaker__grid">
-        <div class="Speaker__card">
-          <img src="asset/Speaker-M(1).png" alt="Speaker" />
-          <div class="Speaker__details">
-            <p class="Speaker__title">Anounced Soon</p>
-            <p class="Speaker__subtitle">Going to give a talk on</p>
-            <p class="Speaker__subtitle">Available Soon</p>
-          </div>
-        </div>
-        <div class="Speaker__card">
-          <img src="asset/Speaker-F (2).png" alt="Speaker" />
-          <div class="Speaker__details">
-            <p class="Speaker__title">Anounced Soon</p>
-            <p class="Speaker__subtitle">Going to give a talk on</p>
-            <p class="Speaker__subtitle">Available Soon</p>
-          </div>
-        </div>
-        <div class="Speaker__card">
-          <img src="asset/Speaker-M(1).png" alt="Speaker" />
-          <div class="Speaker__details">
-            <p class="Speaker__title">Anounced Soon</p>
-            <p class="Speaker__subtitle">Going to give a talk on</p>
-            <p class="Speaker__subtitle">Available Soon</p>
-      </div>
-        </div>
-        <div class="Speaker__card">
-          <img src="asset/Speaker-F (2).png" alt="Speaker" />
-          <div class="Speaker__details">
-            <p class="Speaker__title">Anounced Soon</p>
-            <p class="Speaker__subtitle">Going to give a talk on</p>
-            <p class="Speaker__subtitle">Available Soon</p>
-          </div>
-        </div>
-      </div>
-    </section> -->
+    
+    <!-- cfp -->
 
     <section class="cfp">
       <h2 class="section__titles">Call for Speakers</h2>
@@ -133,6 +85,26 @@
         </div>
       </div>
     </section>
+
+    <!-- Our Speakers -->
+
+    <section class="speakers">
+      <h2 class="speakers_titles">Our Speakers</h2>
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide" >
+            <img src="asset/Aritra Image.png" />
+          </div>
+          <div class="swiper-slide" ><img src="asset/Ritwik Img.png" /></div>
+          <!-- <div class="swiper-slide" ><img src="asset\Speaker-M(1).png" /></div> -->
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+
+
+
+    <!-- Explore Keras -->
 
     <section class="explore" id="expk">
       <div class="section__container explore__container">
@@ -349,5 +321,31 @@
           .catch(error => console.error('Error!', error.message))
       })
     </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+    <script>
+      var swiper = new Swiper('.swiper-container', {
+          pagination: '.swiper-pagination',
+          effect: 'coverflow',
+          grabCursor: true,
+          centeredSlides: true,
+          slidesPerView: 'auto',
+          coverflow: {
+            rotate: 20,
+            stretch: 0,
+            depth: 200,
+            modifier: 1,
+            slideShadows: true
+          },
+          loop: true,
+          autoplay: {
+            delay:1000,
+            disableOnInteraction:false,
+          }
+        });
+    </script>
+
+
   </body>
 </html>
