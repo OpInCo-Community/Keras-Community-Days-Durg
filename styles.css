@@ -577,10 +577,16 @@ header {
 }
 
 .sponsor h2 {
-  text-align: center;
-  padding: 25px 0px;
-  font-size: 2.5rem;
+   top: 50%;
+  font-size: 3rem;
+  font-weight: 600;
   color: var(--text-dark);
+  margin-bottom: 2%;
+  margin-top: 0%;
+  /* margin-top: 2rem; */
+  text-align: center;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .containers {
@@ -612,6 +618,41 @@ header {
 
 .sponsor-why :hover {
   background: var(--primary-color-dark);
+}
+
+/* our sponsors */
+
+.sponsor{
+  align-items: center;
+  justify-content: center;
+}
+
+.sponso__cotainer{
+  max-width: 1000px;
+  margin: auto;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.spons{
+  width: 600px;
+  height: 500px;
+  position: relative;
+  display: flex;
+  justify-content: center; 
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 0%;
+}
+
+
+.spons img{
+  width: 100%;
+  height: 500px;
+  align-items: center;
 }
 
 /* gallery about team */
@@ -878,6 +919,16 @@ header {
 
   .sponsor-why {
     margin: 10px;
+  }
+
+  .spons{
+    max-width: 400px;
+    
+  }
+
+  .spons img{
+    width: 100%;
+    min-height: 80px;
   }
 }
 
